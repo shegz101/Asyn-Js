@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #6e45e2, #88d3ce);
+  height: 100vh;
+}
+
+.header {
+  font-size: 1.5rem;
+  color: #ffffe0;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.description {
+  font-size: 1rem;
+  color: #ffffe0;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.main_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+}
+/* Styling for the search container */
+.search_container {
+  position: relative;
+  font-size: 30px;
+  height: 40px;
+}
+
+/* Styling for the input field */
+.search_container input[type="text"] {
+  width: 40vw; /* Adjust the width as needed */
+  height: 100%;
+  font-size: 20px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+/* Styling for the search button */
+.search_btn {
+  position: absolute;
+  right: 2px;
+  top: 5px;
+  height: 100%;
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px; /* Round the right corner of the button */
+  cursor: pointer;
+}
+
+/* Hover effect for the search button */
+.search_btn:hover {
+  background-color: #0056b3;
+}
+
+.user_data {
+  width: 300px;
+  margin: 20px;
+}
+
+.user_card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.user_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile_pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  .search_container input[type="text"] {
+    width: 90vw;
+  }
+
+  .user_data {
+    width: 90vw;
+    margin: 20px;
+  }
+}

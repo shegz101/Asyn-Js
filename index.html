@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="async.css" />
+    <title>Asynchronous Programming</title>
+  </head>
+  <body>
+    <h1 class="header">Practice: Asynchronous Programming</h1>
+    <p class="description">Github User Data</p>
+
+    <!-- Section for the search bar and display the anime quotes -->
+    <section class="main_section">
+      <!-- Search bar -->
+      <div class="search_container">
+        <input
+          type="text"
+          id="input_data"
+          placeholder="Input github username"
+        />
+        <button class="search_btn" onclick="fetch_user_data()">Search</button>
+      </div>
+
+      <!-- Anime Quotes -->
+      <div class="user_data"></div>
+    </section>
+  </body>
+  <script src="async.js"></script>
+</html>
